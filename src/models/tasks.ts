@@ -1,4 +1,4 @@
-export type TaskStatus = 'completed' | 'pendding';
+export type TaskStatus = 'completed' | 'pending';
 
 export interface TaskDTO {
   title: string;

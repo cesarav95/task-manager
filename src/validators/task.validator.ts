@@ -4,7 +4,7 @@ import { validationResult, body } from 'express-validator';
 export const taskValidator = [
   body('title').exists().notEmpty(),
   body('description').exists().notEmpty(),
-  body('status').exists().isIn(['completed', 'pendding'])
+  body('status').exists().isIn(['completed', 'pending'])
 ];
 
 export const handlerTaskValidator = (req: Request, res: Response, next: NextFunction) => {
