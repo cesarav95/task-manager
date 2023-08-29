@@ -13,12 +13,15 @@ For develop this challenge was used the following tecnologies:
 1. Rename file `.env.example` to `.env`, its important for load environments variables.
 2. If you want to run locally run the following commands:
     ```
-    # For transaction-api
     cd task-api
     npm install
     npm run dev
     ```
 3. Also is available in: <a href="https://api-task-manager-one.vercel.app/api/tasks" target="_blank">https://api-task-manager-one.vercel.app/api/tasks</a>
+4. To run test execute:
+    ```    
+    npm run test
+    ```
 
 # Resources
 
@@ -46,4 +49,4 @@ For develop this challenge was used the following tecnologies:
 
 2.  The frontend application that uses this api can be found at the following link: <a href="https://app-task-manager.vercel.app/tasks/index" target="_blank">https://app-task-manager.vercel.app/tasks/index</a> 
 
-And the repository is: <a href="https://github.com/cesarav95/app-task-manager.git" target="_blank">https://github.com/cesarav95/app-task-manager.git</a>
+    And the repository is: <a href="https://github.com/cesarav95/app-task-manager.git" target="_blank">https://github.com/cesarav95/app-task-manager.git</a>
