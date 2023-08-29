@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import morgan from 'morgan';
 import compression from 'compression';
 import { TasksRoutes } from '../routes/tasks.routes';
 dotenv.config();
@@ -17,6 +18,7 @@ export class ApiServer {
 
   configServer(): void {
     this.app.set('port', process.env.PORT || 3000);
+    this.app.use(morgan('dev'));
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: false }));
     this.app.use(compression());
